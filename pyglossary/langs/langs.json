@@ -331,6 +331,14 @@
 		"title_tag": "b"
 	},
 	{
+		"codes": ["dng"],
+		"name": "Dungan",
+		"alt_names": ["Хуэйзў йүян"],
+		"script": ["Cyrillic"],
+		"wiki": "https://en.wikipedia.org/wiki/Dungan_language",
+		"title_tag": "b"
+	},
+	{
 		"codes": ["dv", "div"],
 		"name": "Maldivian",
 		"alt_names": ["Dhivehi", "Divehi", "ދިވެހި"],

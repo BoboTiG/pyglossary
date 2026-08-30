@@ -1,6 +1,6 @@
 FROM bitnami/minideb
 MAINTAINER Saeed Rasooli saeed.gnu@gmail.com
-LABEL Description="Dockefile to run PyGlossary inside a Debian-based Docker image"
+LABEL Description="Dockerfile to run PyGlossary inside a Debian-based Docker image"
 
 COPY . /opt/pyglossary
 

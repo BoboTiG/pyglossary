@@ -5,7 +5,7 @@ myPath=$(realpath "$0")
 myDir1=$(dirname "$myPath")
 rootDir=$(dirname "$myDir1")
 
-# There is a bug in pyenv 'python' script that splits up a (quoted) arguemnt that has spaces
+# There is a bug in pyenv 'python' script that splits up a (quoted) argument that has spaces
 # So there is no way of passing a filename with spaces
 # That's why I changed `python` to `python3` to avoid pyenv
 

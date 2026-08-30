@@ -80,8 +80,8 @@ def _normalize_needs(raw: Any) -> list[str]:
 
 def _ubuntu_from_matrix_os(job: dict[str, Any]) -> bool | None:
 	"""Classify matrix.os as all Ubuntu, all non-Ubuntu, or mixed/unknown."""
-	strat = job.get("strategy") or {}
-	matrix = strat.get("matrix") or {}
+	strategy = job.get("strategy") or {}
+	matrix = strategy.get("matrix") or {}
 	if not isinstance(matrix, dict) or "os" not in matrix:
 		return None
 	oses = matrix["os"]

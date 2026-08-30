@@ -37,13 +37,13 @@ def locale(
 	def sortKey(words: list[str]) -> Any:
 		return cSortKey(words[0])
 
-	def warpper(
+	def wrapper(
 		sortEncoding: str = "utf-8",  # noqa: ARG001
 		**_options: Any,
 	) -> SortKeyType:
 		return sortKey
 
-	return warpper
+	return wrapper
 
 
 def sqlite(sortEncoding: str = "utf-8", **_options: Any) -> SQLiteSortKeyType:

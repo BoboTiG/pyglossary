@@ -83,7 +83,7 @@ class OutputFileBox(gtk.Box):
 		buttonSizeGroup: gtk.SizeGroup = None,
 	) -> None:
 		gtk.Box.__init__(self, orientation=gtk.Orientation.HORIZONTAL, spacing=3)
-		label = gtk.Label(label=_("Ouput File:"))
+		label = gtk.Label(label=_("Output File:"))
 		pack(self, label)
 		label.set_property("xalign", 0)
 		self.entry = gtk.Entry()

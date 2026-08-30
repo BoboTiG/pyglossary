@@ -131,7 +131,7 @@ nameLangsTestData = [
 	("Néerlandais-Français", "Dutch", "French"),
 	("Bahasa Indonesia-Nederlands Adaptasi", "Indonesian", "Dutch"),
 	("Nederlands-Bahasa Indonesia Adaptasi", "Dutch", "Indonesian"),
-	("Dutch-English Online Dictionay", "Dutch", "English"),
+	("Dutch-English Online Dictionary", "Dutch", "English"),
 	("Dutch_English 22000", "Dutch", "English"),
 	("Babylon Dutch-English", "Dutch", "English"),
 	("Russian-Latvian Dictionary", "Russian", "Latvian"),

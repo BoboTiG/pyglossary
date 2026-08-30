@@ -141,7 +141,7 @@ class GlossaryCommon(GlossaryInfo, GlossaryProgress):  # noqa: PLR0904
 			you have to sort entries yourself (when adding or after directRead)
 
 		- updateIter():
-			no longer needed, and does't do anything in glossary.py
+			no longer needed, and doesn't do anything in glossary.py
 
 	"""
 
@@ -289,7 +289,7 @@ class GlossaryCommon(GlossaryInfo, GlossaryProgress):  # noqa: PLR0904
 	@property
 	def rawEntryCompress(self) -> bool:
 		warnings.warn(
-			"rawEntryCompress is not supported anymore, this propery returns False",
+			"rawEntryCompress is not supported anymore, this property returns False",
 			stacklevel=2,
 		)
 		return False
@@ -388,7 +388,7 @@ class GlossaryCommon(GlossaryInfo, GlossaryProgress):  # noqa: PLR0904
 
 	# def mergeEntriesWithSameHeadwordHTML(self):
 	# 	"""
-	# 	Merge consequtive entries that have the same word list.
+	# 	Merge consecutive entries that have the same word list.
 
 	# 	Currently this convert all non-html entries to html.
 
@@ -400,7 +400,7 @@ class GlossaryCommon(GlossaryInfo, GlossaryProgress):  # noqa: PLR0904
 
 	def mergeEntriesWithSameHeadwordPlaintext(self) -> None:
 		"""
-		Merge consequtive entries that have the same word list.
+		Merge consecutive entries that have the same word list.
 
 		Currently this assume all entries are plaintext
 

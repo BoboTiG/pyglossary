@@ -62,4 +62,4 @@ optionsProp: dict[str, Option] = {
 # https://dumps.wikimedia.org/other/kiwix/zim/
 
 # I can't find any way to download zim files from https://library.kiwix.org/
-# which wiki.openzim.org points at for downloaing zim files
+# which wiki.openzim.org points at for downloading zim files

@@ -67,7 +67,7 @@ class Writer:
 		self.indexPostfix = ""
 		self._dirname = ""
 		# looks like we need to remove tabs, because app gives error
-		# but based on the java code, all punctuations should be removed
+		# but based on the java code, all punctuation should be removed
 		# as well, including '|'
 		self.re_punc = re.compile(
 			r"""[!"$§%&/()=?´`\\{}\[\]^°+*~#'\-_.:,;<>@|]*""",  # noqa: RUF001

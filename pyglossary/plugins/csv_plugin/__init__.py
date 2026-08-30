@@ -99,8 +99,8 @@ docTail = """### Columns / file structure
 Our supported CSV files consists of these columns:
 
 - Main term (headword)
-- Definiton / translation / article
-- Comma-seperated alternative terms (optional) (needs to be quoted for multiple terms)
+- Definition / translation / article
+- Comma-separated alternative terms (optional) (needs to be quoted for multiple terms)
 
 For example, with default `delimiter=","`, a line would like like:
 

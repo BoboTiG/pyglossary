@@ -85,7 +85,7 @@ def processSenses(senseList: list[dict[str, Any]]) -> list[dict[str, Any]] | Non
 
 	def processExamples(exampleList: list[dict[str, Any]]) -> list[dict[str, Any]]:
 		# there are "tags" and "raw_tags" which contain language
-		# and writting system info. Usually there are 2 entries for
+		# and writing system info. Usually there are 2 entries for
 		# traditional and simplified characters.
 		# the word is consider the same if both "roman" and translation is the same
 
@@ -155,17 +155,17 @@ def processSoundList(soundList: list[dict[str, Any]]) -> dict[str, Any]:
 
 	# key 'tags' contains:
 	#   - language ["Mandarin"]
-	#   - phonetic writting system ["Pinyin", "bopomofo"]
-	#   - dialag of each langauge ["standard", "Chendu", "Xi'an"]
+	#   - phonetic writing system ["Pinyin", "bopomofo"]
+	#   - dialect of each language ["standard", "Chendu", "Xi'an"]
 	#
-	# Since the order is random, the groupping is assess only by
-	# Language and phonetic writting system for simplicity
+	# Since the order is random, the grouping is assess only by
+	# Language and phonetic writing system for simplicity
 	# Otherwise the string will be interpreted as dialect/place name
 	# Note that many item in data["sounds"] are not extracted properly
 	# in the first place, so only correctly extracted one will be rendered
 
 	# might need for adding more languages in the future
-	# data from wiktextract does not provide the groupping
+	# data from wiktextract does not provide the grouping
 	# NORTHERN_MIN: Sequence[str] = ("Jian'ou",)  # noqa: F841
 	# EASTERN_MIN: Sequence[str] = ("Fuzhou",)  # noqa: F841
 	# SOUTHERN_MIN: Sequence[str] = ("Hokkien", "Teochew", "Leizhou")  # noqa: F841

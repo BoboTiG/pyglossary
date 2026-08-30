@@ -211,7 +211,7 @@ class Reader:
 		abbrevName = baseName + "_abrv.dsl"
 		if not isfile(abbrevName):
 			return
-		log.info(f"Reading abbrevation file {abbrevName!r}")
+		log.info(f"Reading abbreviation file {abbrevName!r}")
 		reader = Reader(self._glos)
 		reader.open(abbrevName)
 		for entry in reader:

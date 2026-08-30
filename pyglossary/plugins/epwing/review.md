@@ -50,9 +50,9 @@ skip code, and cleared only when the current code equals `skip_code`:
 ```python
 step, new_skip = self._control_step(data, offset, code)
 if new_skip is not None:
-    skip_code = new_skip
+	skip_code = new_skip
 elif skip_code == code:
-    skip_code = None
+	skip_code = None
 ```
 
 Overlapping or nested ruby-style marker pairs (e.g. `0x35`/`0x55` while another

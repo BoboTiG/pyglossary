@@ -56,6 +56,7 @@ Web interface
 | [AppleDict Source](./doc/p/appledict.md)                | 📁  |                 | ✅ | ✅ |
 | [Babylon BGL](./doc/p/babylon_bgl.md)                   | 🔢  |      .bgl       | ✅ | ✅ |
 | [CSV](./doc/p/csv.md)                                   | 📝  |      .csv       | ✅ | ✅ |
+| [Dict.cc translation export](./doc/p/dict_cc_source.md) | 📝  |       .txt      | ✅ | ❌ |
 | [DICT.org / Dictd server](./doc/p/dict_org.md)          | 📁  |    (📝.index)   | ✅ | ✅ |
 | [DICT.org / dictfmt source](./doc/p/dict_org_source.md) | 📝  |     (.dtxt)     |    | ✅ |
 | [dictunformat output file](./doc/p/dictunformat.md)     | 📝  | (.dictunformat) | ✅ |    |
@@ -89,6 +90,7 @@ Web interface
 | [Dict.cc](./doc/p/dict_cc.md)                        🇩🇪 | 🛢️  |       .db       | ✅ |    |
 | [DigitalNK](./doc/p/digitalnk.md)                    🇰🇵 | 🛢️  |       .db       | ✅ |    |
 | [EDICT2 (CEDICT)](./doc/p/edict2.md)                 🇨🇳 | 📝  |     (.u8)       | ✅ | ❌ |
+| [EPWING](./epwing.md)                                🇯🇵 | 📁  |                 | ✅ | ❌ |
 | [JMDict](./doc/p/jmdict.md)                          🇯🇵 | 📝  |                 | ✅ | ❌ |
 | [JMnedict](./doc/p/jmnedict.md)                      🇯🇵 | 📝  |                 | ✅ | ❌ |
 | [WordNet](./doc/p/wordnet.md)                        🇬🇧 | 📁  |                 | ✅ | ❌ |

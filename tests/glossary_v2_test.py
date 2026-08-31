@@ -839,6 +839,23 @@ class TestGlossary(TestGlossaryBase):
 				sqlite=sqlite,
 			)
 
+	def test_txt_txt_res_dirs(self):
+		glos = self.glos = Glossary()
+		glos.addEntry(glos.newEntry(["test"], "test defi"))
+		glos.addEntry(glos.newDataEntry("img/icon.png", b"PNG"))
+		glos.addEntry(glos.newDataEntry("audio/en/hello.mp3", b"MP3"))
+
+		outputFilename = self.newTempFilePath("nested-res.txt")
+		glos.write(outputFilename, formatName="Tabfile")
+
+		glos2 = self.glos = Glossary()
+		glos2.directRead(outputFilename)
+		dataFileNames = sorted(entry.getFileName() for entry in glos2 if entry.isData())
+		self.assertEqual(
+			dataFileNames,
+			["audio/en/hello.mp3", "img/icon.png"],
+		)
+
 	def test_dataEntry_save(self):
 		glos = self.glos = Glossary()
 		tmpFname = "test_dataEntry_save"

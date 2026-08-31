@@ -317,6 +317,23 @@ class TestGlossaryStarDict(TestGlossaryStarDictBase):
 			syn=True,
 		)
 
+	def test_convert_stardict_txt_res_dirs(self):
+		glos = self.glos = Glossary()
+		glos.addEntry(glos.newEntry(["test"], "test defi"))
+		glos.addEntry(glos.newDataEntry("img/icon.png", b"PNG"))
+		glos.addEntry(glos.newDataEntry("audio/en/hello.mp3", b"MP3"))
+
+		outputFilename = self.newTempFilePath("nested-res.ifo")
+		glos.write(outputFilename, formatName="Stardict", sqlite=False)
+
+		glos2 = self.glos = Glossary()
+		glos2.directRead(outputFilename)
+		dataFileNames = sorted(entry.getFileName() for entry in glos2 if entry.isData())
+		self.assertEqual(
+			dataFileNames,
+			["audio/en/hello.mp3", "img/icon.png"],
+		)
+
 
 class TestGlossaryErrorsStarDict(TestGlossaryErrorsBase):
 	def __init__(self, *args, **kwargs):

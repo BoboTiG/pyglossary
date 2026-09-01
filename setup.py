@@ -47,6 +47,29 @@ def getPipSafeVersion() -> str:
 	return VERSION
 
 
+def checkoutGitLfsFiles() -> None:
+	if not isdir(".git"):
+		return
+	import subprocess
+
+	try:
+		subprocess.run(
+			["git", "lfs", "checkout"],
+			check=True,
+			stdout=subprocess.DEVNULL,
+			stderr=subprocess.DEVNULL,
+		)
+	except (subprocess.CalledProcessError, OSError):
+		log.warning(
+			"git-lfs is not installed or failed; "
+			"LFS-tracked files (e.g. res/pyglossary.svg) may be "
+			"packaged as pointer files"
+		)
+
+
+checkoutGitLfsFiles()
+
+
 root_data_file_names = [
 	"about",
 	"LICENSE",

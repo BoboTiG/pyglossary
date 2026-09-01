@@ -26,3 +26,4 @@ vulture.*
 .vscode
 uv.lock
 doc/releases/dev.md
+*.drawio.bkp

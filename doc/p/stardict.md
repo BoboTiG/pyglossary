@@ -45,6 +45,39 @@ To update, modify plugins/stardict/__init__.py file, then run ./scripts/gen
 | sqlite | `False` | bool | Use SQLite to limit memory usage. |
 | max_file_size | `0` | int | Max .dict file size before splitting into multiple glossaries;<br />0 means use default based on large_file (4 GiB or 64-bit limit).<br /> Examples: 100m, 1g |
 
+### StarDict program HTML support
+
+The StarDict application renders HTML definitions with a very limited engine
+(its `stardict-html-parsedata-plugin`). It only understands these tags:
+
+- inline formatting: `b`, `big`, `i`, `s`, `sub`, `sup`, `small`, `tt`, `u`,
+  `font` (`face` and `color` attributes)
+- line breaks: `br` (literal `<br>` only) and `hr`
+- links and images: `a` (`href`), `img` (`src`)
+
+All other tags — including `div`, `p`, `span`, `ol`, `li`, `blockquote`,
+`table` and headings — are dropped and their content is rendered inline. As a
+result:
+
+- line breaks and block boundaries (keyword, sibling definitions, examples)
+  are lost,
+- ordered and unordered lists are not numbered or bulleted,
+- `blockquote` indentation is not applied,
+- the self-closing `<br/>` form is **not** recognized as a line break
+  (PyGlossary writes `<br/>`), so explicit line breaks are dropped as well,
+- inline formatting (bold, italic, underline, sub/superscript, `font` color)
+  is preserved.
+
+This matters for `sametypesequence=h` (HTML) and `sametypesequence=x` (XDXF)
+entries, which PyGlossary converts to HTML on read (see the `xdxf_to_html`
+option). That HTML relies on `div`, `ol`/`li` and `<br/>` for layout, so
+entries will look degraded in the StarDict program. Viewers that render HTML
+with a full web engine, such as GoldenDict or AyanDict, are recommended
+instead.
+
+See the
+[StarDict HTML parsing plugin source](https://github.com/huzheng001/stardict-3/blob/master/dict/stardict-plugins/stardict-html-parsedata-plugin/stardict_html_parsedata.cpp).
+
 ### Dictionary Applications/Tools
 
 | Name & Website | Source code | License | Platforms | Language |

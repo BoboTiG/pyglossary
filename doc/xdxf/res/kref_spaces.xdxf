@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdxf SYSTEM "http://xdxf.sourceforge.net/xdxf_lousy.dtd">
+<xdxf lang_from="eng" lang_to="eng" format="visual">
+	<full_name>kref_spaces</full_name>
+	<description>issue #532: spaces before/after kref preserved</description>
+	<lexicon>
+		<ar>
+			<k>cross-reference</k>
+			<dtrn>see <kref>other</kref> here and <kref k="target word">target</kref></dtrn>
+		</ar>
+	</lexicon>
+</xdxf>

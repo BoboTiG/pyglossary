@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdxf SYSTEM "http://xdxf.sourceforge.net/xdxf_lousy.dtd">
+<xdxf lang_from="eng" lang_to="eng" format="visual">
+	<full_name>newlines</full_name>
+	<description>issue #532: newlines render as line breaks</description>
+	<lexicon>
+		<ar>
+			<k>newlines</k>
+			<abr>noun</abr>
+			<dtrn>line one
+			line two
+			
+			line four</dtrn>
+		</ar>
+	</lexicon>
+</xdxf>

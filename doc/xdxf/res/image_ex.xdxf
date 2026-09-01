@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdxf SYSTEM "http://xdxf.sourceforge.net/xdxf_lousy.dtd">
+<xdxf lang_from="eng" lang_to="eng" format="visual">
+	<full_name>image_ex</full_name>
+	<description>&lt;img&gt; rendered self-closing inside definition and example</description>
+	<lexicon>
+		<ar>
+			<k>image</k>
+			<dtrn>see <img src="pic.png" alt="pic"/></dtrn>
+			<ex>with an <img src="ex.png"/></ex>
+		</ar>
+	</lexicon>
+</xdxf>

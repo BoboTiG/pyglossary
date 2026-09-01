@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdxf SYSTEM "http://xdxf.sourceforge.net/xdxf_lousy.dtd">
+<xdxf lang_from="eng" lang_to="eng" format="visual">
+	<full_name>gr_c</full_name>
+	<description>&lt;c&gt; color tag and &lt;gr&gt; grammatical tag</description>
+	<lexicon>
+		<ar>
+			<k>grammar</k>
+			<dtrn>word <c c="blue">colored</c> <gr>gram.</gr> and <c>default green</c> text</dtrn>
+		</ar>
+	</lexicon>
+</xdxf>

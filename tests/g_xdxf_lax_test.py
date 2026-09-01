@@ -9,6 +9,7 @@ class TestGlossaryXDXFLax(TestGlossaryBase):
 
 		self.dataFile |= {
 			"100-cyber_lexicon_en-es-v4.txt",
+			"100-cyber_lexicon_en-es-v5.txt",
 		}
 		self.dataFileCRC32 |= {
 			"100-cyber_lexicon_en-es.xdxf": "8d9ba394",
@@ -27,6 +28,14 @@ class TestGlossaryXDXFLax(TestGlossaryBase):
 		self.convert_xdxf_txt(
 			"100-cyber_lexicon_en-es",
 			"100-cyber_lexicon_en-es-v4",
+			readOptions={"xsl": True},
+		)
+
+	def test_convert_xdxf_txt_2(self):
+		self.convert_xdxf_txt(
+			"100-cyber_lexicon_en-es",
+			"100-cyber_lexicon_en-es-v5",
+			readOptions={"xsl": False},
 		)
 
 

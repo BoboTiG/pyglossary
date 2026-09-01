@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdxf SYSTEM "http://xdxf.sourceforge.net/xdxf_lousy.dtd">
+<xdxf lang_from="eng" lang_to="eng" format="visual">
+	<full_name>lingvo_entry</full_name>
+	<description>issue #532: Lingvo-style entry with numbered defs, grey indented examples</description>
+	<lexicon>
+		<ar>
+			<k>abstinence</k>
+			<tr>ˈæbstɪnən(t)s</tr> 
+			 <abr>сущ.</abr>
+			 1) <c><dtrn><co>= abstention</co></dtrn></c>
+			  а) <dtrn>воздержание; умеренность</dtrn>
+			   <ex>abstinence from meat — вегетарианство</ex>
+			 2) <dtrn><abr>рел.</abr> соблюдение поста, пост</dtrn>
+			  <ex>day of abstinence — постный день</ex>
+		</ar>
+	</lexicon>
+</xdxf>

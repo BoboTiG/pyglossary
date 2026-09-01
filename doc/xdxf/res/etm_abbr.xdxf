@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdxf SYSTEM "http://xdxf.sourceforge.net/xdxf_lousy.dtd">
+<xdxf lang_from="eng" lang_to="eng" format="visual">
+	<full_name>etm_abbr</full_name>
+	<description>&lt;etm&gt; etymology and &lt;abbr&gt; abbreviation</description>
+	<lexicon>
+		<ar>
+			<k>etymology</k>
+			<dtrn>from <etm>Latin word</etm>, <abbr>abbr.</abbr></dtrn>
+		</ar>
+	</lexicon>
+</xdxf>

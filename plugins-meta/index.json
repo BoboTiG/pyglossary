@@ -1797,7 +1797,7 @@
 		"sortKeyName": "stardict",
 		"readOptions": {
 			"xdxf_to_html": true,
-			"xsl": true,
+			"xsl": false,
 			"unicode_errors": "strict"
 		},
 		"writeOptions": {
@@ -2219,7 +2219,7 @@
 		"canWrite": false,
 		"readOptions": {
 			"html": true,
-			"xsl": true
+			"xsl": false
 		},
 		"readDepends": {
 			"lxml": "lxml"
@@ -2281,7 +2281,7 @@
 		"canWrite": false,
 		"readOptions": {
 			"html": true,
-			"xsl": true
+			"xsl": false
 		},
 		"readDepends": {
 			"lxml": "lxml"

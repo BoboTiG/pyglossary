@@ -259,6 +259,13 @@ mccabe.max-complexity = 13
 	"INP001", # File ... is part of an implicit namespace package. Add an `__init__.py`.
 ]
 
+"doc/xdxf/*.py" = [
+	"E501", # Long XDXF sample strings, Long HTML template lines
+	"RUF001", # Intentional IPA / Cyrillic in dictionary samples
+	"C901", # `visit` and `_svg_content_bbox` are complex (SVG geometry walker)
+	"PLR0912", # Too many branches in the SVG geometry walker
+]
+
 "tests/unused_test.py" = [
 	"F401",  # imported but unused
 	"F811", # Redefinition of unused

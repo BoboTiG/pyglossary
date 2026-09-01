@@ -55,7 +55,7 @@ class Reader:
 
 	useByteProgress = False
 	_xdxf_to_html: bool = True
-	_xsl: bool = True
+	_xsl: bool = False
 	_unicode_errors: str = "strict"
 
 	def __init__(self, glos: ReaderGlossaryType) -> None:

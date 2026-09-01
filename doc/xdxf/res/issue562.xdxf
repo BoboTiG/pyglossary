@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdxf SYSTEM "http://xdxf.sourceforge.net/xdxf_lousy.dtd">
+<xdxf lang_from="eng" lang_to="eng" format="visual">
+	<full_name>issue562</full_name>
+	<description>issue #562: spaces between tags preserved</description>
+	<lexicon>
+		<ar>
+			<k>grzebiący</k><def> <def> <pos>прич. от</pos> <b>grzebać</b>; </def><def><co> grzebiące, grzebiących</co> <pos>мн. зоол.</pos> кури́ные <pos>lm</pos> (Galliformes) </def></def>
+		</ar>
+	</lexicon>
+</xdxf>
